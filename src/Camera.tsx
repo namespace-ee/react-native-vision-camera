@@ -385,7 +385,7 @@ export class Camera extends React.PureComponent<CameraProps> {
   private unsetFrameProcessor(): void {
     this.assertFrameProcessorsEnabled();
     // @ts-expect-error JSI functions aren't typed
-    global.unsetFrameProcessor(this.handle);
+    // global.unsetFrameProcessor(this.handle); 
   }
 
   private onViewReady(): void {
